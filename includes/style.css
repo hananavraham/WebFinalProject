@@ -72,7 +72,7 @@ nav ul{
 nav ul li{
     margin-top: 6px;
     margin-left: 5px;
-    width: 120px;
+    width: 130px;
     height: 40px;
     display: block;
     text-align: center;
@@ -129,7 +129,7 @@ nav .search-container button:hover {
 
 nav .search-container {
     float: left;
-    width: 200px;
+    width:150px;;
     margin-left: 50px;
 }
 
@@ -176,7 +176,6 @@ main form .progress{
 	width:40%;
 	height: 10px;
 	margin:auto;
-	margin-top:25px;
 	border-radius: 7px;
 }
 
@@ -320,45 +319,6 @@ footer ul li:nth-child(4) a{
     display: block;
     float: left;
 }
-/*footer ul li a:nth-child(1){
-    background-image: url(../images/facebook.png);
-    background-repeat: no-repeat;
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin-left: 10px;  
-    float: left;
-}
-
-footer ul li a:nth-child(2){
-    background-image: url(../images/twitter.png);
-    background-repeat: no-repeat;
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin-left: 10px;  
-    float: left;
-}
-
-footer ul li a:nth-child(3){
-    background-image: url(../images/google.png);
-    background-repeat: no-repeat;
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin-left: 10px;  
-    float: left;
-}
-
-footer ul li a:nth-child(4){
-    background-image: url(../images/youtube.png);
-    background-repeat: no-repeat;
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin-left: 10px;  
-    float: left;
-}*/
 
 
 
