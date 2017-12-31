@@ -3,10 +3,13 @@
 <html>
  
 	<head>
-		<title></title>
+		<title>NewTrainee2</title>
 		<link rel="stylesheet" href="includes/style.css">
+		<script src="includes/jquery-3.2.1.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="includes/script.js"></script>
+		<script src="includes/nav_footer.js"></script>
 	</head>
 	
 	<body>
@@ -14,12 +17,7 @@
 	    <div id="wrapper">
 	    
 	        <header>
-	            <a href="index.html">
-	                <span class="logo1">Workout Tracker</span>
-	            </a>
-	            <article>
-	               IT DOSEN'T GET EASIER YOU JUST GET BETTER
-	            </article>
+
 	        </header>
 	
 	        <nav>
@@ -39,7 +37,16 @@
 	        </nav>
 	
 	        <main>
-	        	<br>
+	        	<section id="breadcrumbs">
+                    <ul>
+                        <li><a href="index.html">Home</a></li> >
+                        <li><a href="trainers.html">Trainres</a></li> >
+                        <li><a href="Newtrainee1.html">Personal Details</a></li> >
+                        <li><a href="Newtrainee2.html">Personal Indices</a></li>
+                    </ul>
+                    
+                </section>
+
 	        	<h3><b>Personal Indices</b></h3>
 				<form action="#">			    
 					<br>		
@@ -68,25 +75,30 @@
 				        <input type="text" class="form-control" placeholder="Goals">
 				    </div>					
 				    <div class="text-center">
-				        <button class="btn btn-default">Submit</button>
+				        <button id="submit" class="btn btn-default">Submit</button>
 				    </div>
 				    <div class="progress">
 						 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> </div>
 					</div>
 				</form>
+				<section id="popup">
+					<div>
+					<strong>Success!</strong><br>Create Account and email sent to user successfully.
+					</div>
+					<button id="ok" class="btn btn-default">Ok</button>
+                </section>
 	        </main>
 	
 	        <footer>
-	             <ul>
-	                <li><a href="#"></a></li>
-	                <li><a href="#"></a></li>
-	                <li><a href="#"></a></li>
-	                <li><a href="#"></a></li>
-	            </ul>
-	
+
 	        </footer>
 	        
 	    </div>
+	    <script>
+		    $("document").ready(function() {		//invoke function
+					init();
+				});
+		</script>
 	</body>
  
 </html>

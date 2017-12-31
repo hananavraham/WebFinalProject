@@ -3,10 +3,13 @@
 <html>
  
 	<head>
-		<title></title>
+		<title>Login</title>
 		<link rel="stylesheet" href="includes/style.css">
+		<script src="includes/jquery-3.2.1.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="includes/script.js"></script>
+		<script src="includes/nav_footer.js"></script>
 	</head>
 	
 	<body>
@@ -14,70 +17,64 @@
 	    <div id="wrapper">
 	    
 	        <header>
-	            <a href="index.html">
-	                <span class="logo1">Workout Tracker</span>
-	            </a>
-	            <article>
-	               IT DOSEN'T GET EASIER YOU JUST GET BETTER
-	            </article>
+
 	        </header>
 	
 	        <nav>
-	            <ul>
-	                <li><a href="index.html">HOME</a></li>
-	                <li><a href="trainers.html">TRAINERS</a></li>
-	                <li><a href="#">WORKOUT</a></li>
-	                <li><a href="#">CONTACT</a></li>
-	                <li><a href="#">LOGIN</a></li>
-	                <li>
-	                	<div class="search-container">
-	                        <input type="text" placeholder="Search.." name="search">
-	                        <button type="submit"><i class="fa fa-search"></i></button> 
-	                    </div>
-	                </li>
-	            </ul>
+
 	        </nav>
 	
 	        <main>
-				<article class="login">
+	        	<section id="breadcrumbs">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                    
+                </section>
+                
+				<form action="newtrainee1.html" class="login loginform">
 					<h3><b>Trainer</b></h3>
 				    <div class="md-form">
 				        <i class="fa fa-user prefix black-text"></i>
-				        <input type="text" id="defaultForm-email" class="form-control" placeholder="User Name">
+				        <input type="text" id="defaultForm-email" required="" class="form-control" placeholder="User Name">
 				    </div>			
 				    <div class="md-form">
 				        <i class="fa fa-lock prefix black-text"></i>
-				        <input type="password" id="defaultForm-pass" class="form-control" placeholder="Password">
+				        <input type="password" id="defaultForm-pass" required="" class="form-control" placeholder="Password">
 				    </div>			
-				    <li><a href="trainers.html">Login</a></li>
-				</article>
+				     <div class="text-center">
+				        <button class="btn btn-default">Login</button>
+				    </div>
+				</form>
 				
-				<article class="login">
+				<form action="#" class="login loginform">
 					<h3><b>Trainee</b></h3>	
 				    <div class="md-form">
 				        <i class="fa fa-user prefix black-text"></i>
-				        <input type="text" id="defaultForm-email" class="form-control" placeholder="User Name">
+				        <input type="text" id="defaultForm-email" required="" class="form-control" placeholder="User Name">
 				    </div>			
 				    <div class="md-form">
 				        <i class="fa fa-lock prefix black-text"></i>
-				        <input type="password" id="defaultForm-pass" class="form-control" placeholder="Password">
+				        <input type="password" id="defaultForm-pass" required="" class="form-control" placeholder="Password">
 				    </div>			
-				     <li><a href="#">Login</a></li>
-				</article>
+				      <div class="text-center">
+				        <button class="btn btn-default">Login</button>
+				    </div>
+				</form>
 				
 	        </main>
 	
 	        <footer>
-	             <ul>
-	                <li><a href="#"></a></li>
-	                <li><a href="#"></a></li>
-	                <li><a href="#"></a></li>
-	                <li><a href="#"></a></li>
-	            </ul>
-	
+
 	        </footer>
 	        
 	    </div>
+	    <script>
+		    $("document").ready(function() {		//invoke function
+					init();
+				});
+		</script>
 	</body>
  
 </html>
