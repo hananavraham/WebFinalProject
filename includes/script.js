@@ -10,16 +10,17 @@ function init() {		// function that call to all function(addHeader,addNav,addFoo
     insertFooter();
     showPopUp();
     add_program();
+    selectedPage();
 }
 
 programs ={
 	sugget_programs:{
 		program1:"Loss Fat",
-		program2:1,
-		program3:1,
-		program4:1,
-		program5:1,
-		program6:1,
+		program2:"Loss Fat & Diet",
+		program3:"12 Weeks Fat Destroyer",
+		program4:"Beginner's Fat-Loss",
+		program5:"Metabolic Supercharge",
+		program6:"The no-cardio workout",
 	}
 }
 
@@ -30,15 +31,15 @@ var suggets_prog = programs.sugget_programs;
 
 function add_program(){
 	for (obj in suggets_prog){
-	var img = $('<img class="rounded mx-auto d-block" width="200px" height="148px">')
+	var img = $('<img class="rounded mx-auto d-block" max-width="200px" height="148px">')
 		.attr('src',`images/${obj}.png`);
 	var card = $('<div class="card text-center">')
-		.css('width','200px');
+		.css('max-width','200px');
 	var button = $('<a href="#" class="btn btn-dark">choose!</a>').on('click',choose);
 	card.append(img);
 	card.append(
 		$('<div class="card-body">')
-			.append('<h4 class="card-title">' + suggets_prog[obj] + '</h4>')
+			.append('<h4 class="card-title"><b>' + suggets_prog[obj] + '</b></h4>')
 			.append('<p class="card-text"><small class="text-muted">')
 			.append(button)
 		)
@@ -48,8 +49,6 @@ function add_program(){
 
 function choose(){
 	var element = $(this).siblings().get(0);
-	var text = $(element).text();
-	console.log('you choose: ',text);
 }
 
 
@@ -80,4 +79,13 @@ function insertNav(){
 function insertFooter(){
 	$("body footer").append(footer);
 }
+
+function selectedPage(){
+	console.log(name);
+	var l = $("nav a");
+	$('nav a[href="' + name + '"]').css("color", "#0B2CE9");
+
+
+}
+
 

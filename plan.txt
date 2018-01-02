@@ -1,0 +1,44 @@
+css:
+
+#plan{
+    overflow: hidden;
+}
+
+#plan article:nth-child(1){
+    margin-top: 70px;
+    margin-left: 70px;
+    float: left;
+}
+
+#plan article:nth-child(2){
+    margin-top: 70px;
+    margin-right: 70px;
+    float: right;
+
+}
+
+#plan article:nth-child(3){
+    margin-top: 70px;
+    margin-left: 70px;
+    float: left;
+    clear: left;
+}
+-----------------------------------------------
+
+html:
+
+   	<h3><b>Plan Display</b></h3> 
+                <section id="plan">
+                    <article>
+                        <img src="images/activityN.png">   
+                    </article>
+                    <article>
+                        <img src="images/planN.png">
+                    </article>
+                    <article>
+                        <img src="images/calN.png">
+                    </article>
+                    
+                </section>
+				
+------------------------------------------------------				
