@@ -115,7 +115,6 @@ nav input[type=text] {
     
 }
 
-
 nav .search-container button{
     float: right;
     padding: 9px 7px;
@@ -228,6 +227,46 @@ h3{
 h4{
 	text-align: center;
 }
+
+#selection{
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+#selection ul{
+    list-style: none;
+    margin-left:45px;
+}
+
+#selection ul li{
+	font-size:large;
+	font-weight:400;
+    margin-top:18px;
+}
+
+#selection ul li .icon-btn{
+    padding: 10px 15px 9px 8px;
+}
+
+#selection ul li .fa{
+    padding: 10px 7px 9px 8px;
+}
+
+
+#selection .btn-glyphicon {
+    padding:8px;
+    background:#ffffff;
+    margin-right:4px;
+}
+
+#selection .icon-btn {
+    margin-top: 15px;
+    padding: 1px 15px 3px 2px;
+    border-radius:50px; 
+}
+
+
+
 .login{
 	max-width:263px;
 	width:26.3%;
