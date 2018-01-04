@@ -71,9 +71,10 @@ function insertHeader(){
 
 function insertNav(){
     if (!(name == "index.html" || name == "login.html")){
+    	$("body nav").append(nav2);
     	return;
     }
-	$("body nav").append(nav);
+	$("body nav").append(nav1);
 }
 
 function insertFooter(){
