@@ -2,12 +2,9 @@
 var pagePathName;
 var name;
 var programs;
-function init() {		// function that call to all function(addHeader,addNav,addFooter)
+function init() {	
 	pagePathName = window.location.pathname;
     name = pagePathName.substring(pagePathName.lastIndexOf("/") + 1);
-	insertHeader();
-	insertNav();
-    insertFooter();
     showPopUp();
     add_program();
     selectedPage();
@@ -64,29 +61,11 @@ function showPopUp(){
 	}	
 }
 
-function insertHeader(){
-	$("body header").append(header);
-}
-
-
-function insertNav(){
-    if (!(name == "index.html" || name == "login.html")){
-    	$("body nav").append(nav2);
-    	return;
-    }
-	$("body nav").append(nav1);
-}
-
-function insertFooter(){
-	$("body footer").append(footer);
-}
 
 function selectedPage(){
 	console.log(name);
 	var l = $("nav a");
 	$('nav a[href="' + name + '"]').css("color", "#0B2CE9");
-
-
 }
 
 
