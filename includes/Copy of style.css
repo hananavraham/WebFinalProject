@@ -19,16 +19,12 @@ a{
 
 /*end of genral css----------------------------------------------------------------*/
 
-body{
-	width:100%;
-	background-color: #f5f5f5;  
-}
-
 
 #wrapper{  
     max-width: 1000px;
     width:100%;
     margin: 0 auto;
+    background-color: #f5f5f5;   
 }
 
 header{
@@ -44,10 +40,6 @@ header a{
     height: 96px;
     margin-left: 10px;  
     float: left;
-}
-
-header article{
-	width:70%;
 }
 
 .logo1{
@@ -146,7 +138,7 @@ nav .logout{
 }
 
 #breadcrumbs ul{
-    margin: 10px 0 0 20px;
+    margin: 10px 0 0 120px;
     color: #006ce5;
 }
 
@@ -155,7 +147,6 @@ nav .logout{
     margin-right: 3px;
 }
 main{
-	margin:0 10px 0 10px;
     height: 800px;
     position: relative;
 }
@@ -218,7 +209,7 @@ main form .progress .progress-bar{
 
 h2{
 	margin-top:10px;
-	margin-left:20px;
+	margin-left:120px;
 }
 
 h3{
@@ -420,25 +411,25 @@ article li a{
 
 #plan{
     overflow: hidden;
-    width:100%;
 }
 
 #plan article:nth-child(1){
     margin-top: 70px;
-    margin-left: 40px;
+    margin-left: 70px;
     float: left;
 }
 
 #plan article:nth-child(2){
     margin-top: 70px;
+    margin-right: 70px;
     float: right;
-    width:60%;
+
 }
 
 #plan article:nth-child(3){
-    margin-top: 40px;
-    width:60%;
-    float: right;
+    margin-top: 70px;
+    margin-left: 70px;
+    float: left;
     clear: left;
 }
 
@@ -589,332 +580,10 @@ footer section{
 	text-decoration: none;	
 }
 
-#options{
-	margin-top:30px;
-}
-
-#rangeselect{
-	background-color: #c2dbb4;
-	width:215px;
-	height:278px;
-	text-align: center;
-	position: unset;
-	margin-top:40px;
-	float:left;
-}
-
-#rangeselect .btn{
-	margin:0 auto;
-	margin-top:15px;
-	color:#FFFFFF !important;
-	font-weight: bold;
-}
-
-#rangeselect .btn:nth-child(1){
-	background-color: #ff5d55;
-}
-
-#rangeselect .btn:nth-child(2){
-	background-color: #5cb85c;
-}
-
-#rangeselect .btn:nth-child(3){
-	background-color: #92d36e;
-}
-
-#rangeselect section{
-	margin-top:30px;
-}
-
-#rangeselect section label{
-	float:left;
-	margin-left:7px;
-}
-
-#rangeselect section label:nth-child(2){
-	margin-left:60px;
-}
-
-#rangeselect section input{
-	background-color: #5cb85c;
-}
-
-#rangeselect input{
-	width:100px;
-	background-color: #00C851;
-	border-radius: 3px;
-	height:20px;
-}
-
-#chartContainer{
-	float:left;
-	margin: 40px 0 0 10%;
-}
-
-#chartContainer .canvasjs-chart-credit{
-	display: none;
-}
-
-#updatemeasure{
-	position: unset;
-	border:none;
-	margin:20px 0 0 20px; 
-}
-
-#updatemeasure .fa-text-width{
-	color:#5cb85c !important;
-}
-
-#updatemeasure .fa-percent{
-	color:#ff6624 !important;
-}
-
-#updatemeasure .fa-map-marker{
-	color:#46b8da !important;
-}
-
-#updatemeasure .fa-refresh{
-	color:#d757f6 !important;
-}
-
-#updatemeasure .fa-fire{
-	color:#FF6624 !important;
-}
-
-#updatemeasure .fa-user-md{
-	color:#006CE5 !important;
-}
-
-#measure article:nth-child(1){
-	margin:20px 0 0 40%;
-}
-
-#measure article:nth-child(2){
-	margin:20px 0 0 10%;
-}
-
-#measure article div{
-	margin-right:10px;
-}
 
 
 
-#step_circle{
-	height: 100px;
-	width:100px;
-	position: absolute;
-	top:10%;
-	left:40%;
-}
 
-.custom-icon {
-
-  border-radius: 100%;
-  border: 4px solid #72bb53;
-  display: table-cell;
-  font-size: 45px;
-  height: 30px;
-  width:30px;
-  padding: 30px;
-  text-align: center;
-  transition: .5s;
-  vertical-align: middle;  
-}
-
-#indices .custom-icon{
-  height: 15px;
-  width:15px;
-}
-
-#indices{
-	width:80%;
-	text-align: center;
-}
-
-.custom-icon:hover {
-  background: #C2DBB4;
-}
-.fix-editor {
-  display: none;
-}
-.icon-wrapper {
-  display: inline-block;
-}
-
-.icon-wrapper .fa{
-	color:#72bb53;
-	font-size: xx-large;
-}
-
-.table{ 	
-	border-radius: 10px;
-	border:1px solid #BDC3C7;
-	border-spacing:0;
-	border-top-left-radius:20px;
-	border-top-right-radius:20px;
-	line-height: 8px;
-}
-
-table thead th:first-child{
-	border-top-left-radius:20px;
-}
-
-table thead th:last-child{
-	border-top-right-radius:20px;
-}
-
-table thead{
-	background-color: #c4e3e2;
-	line-height: 6px;
-}
-
-table thead tr th:nth-child(1){
-	text-align: left;
-	padding-left: 10px;
-}
-
-
-table thead tr th{
-	width:80px;
-	text-align: center;
-	
-}
-
-table tbody tr th{
-	width:170px;
-	text-align: left;
-	padding-left: 10px;
-}
-
-table tbody tr td{
-	text-align: center;
-}
-
-
-
-	
-
-/**********************  media query for mobile **************************************/
-
-@media (max-width:767px) {
-
-	header article{
-		display:none;
-	}
-	header a{
-		width:50%;
-	}
-	
-	header a .logo1{
-		display: none;
-	}
-	
-	#nav{
-		display: none;
-	}
-	
-	.navbar-toggle{
-		background: url(../images/Hamburger_icon.png) no-repeat center;
-		color:#FFFFFF;
-		width: 32px;
-		height: 32px;
-		border:1px solid #00C851;
-	}
-
-
-
-	
-	/*
-	nav ul{
-		margin:0 auto;
-	}
-	
-	nav ul li{
-		width:15%;
-		margin-left:0;
-	}
-	
-	nav .search-container{
-		margin-left:0;
-	}
-	*/
-	
-	
-	#breadcrumbs{
-		display: none;
-	}
-	
-	main .login{
-		width:35%;
-	}
-	
-	main .loginform:nth-child(2){
-		left: 50px;
-	}
-	
-	main .loginform:nth-child(3){
-		left: 420px;
-	}
-	
-	main form{
-		border:none;
-		width:70%;
-		left:20px;
-	}
-	
-	main form .btn{
-		margin-left:150px;
-	}
-	
-	main form .progress{
-		margin-left:125px;
-	}
-	
-	#popup .btn-default{
-		margin: 20px 0 0 100px;
-	}
-	
-	main .row{
-		margin: 20px 0 0 20px;
-	}
-	
-	div .card{
-		margin: 20px 20px 20px 20px;
-	}
-	
-	
-	footer section:nth-child(1){
-		width:30%;
-	}
-	footer section:nth-child(2){
-		width:50%;
-		margin-right: 10px;
-	}
-	footer section:nth-child(2) ul{
-		width:100%;
-		
-	}
-	
-	footer section:nth-child(2) ul li{
-		float:right;
-	}
-	
-}
-/***********************************************************************/
-
-@media (min-width:768px) {
-	#wrapper{
-		width:70%;
-	}
-	
-	#navmobile{
-		display: none;
-	}
-	
-	
-	
-	
-}
 
 
 
