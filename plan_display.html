@@ -4,6 +4,7 @@
  
 	<head>
 		<title>Plan Display</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" href="includes/style.css">
 		<script src="includes/jquery-3.2.1.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css" />
@@ -24,10 +25,8 @@
 	
 	        <nav>
 				<ul>
-	           		<li><a href="index.html">HOME</a></li>
-	           		<li><a href="trainers.html">TRAINERS</a></li>
+	           		<li><a href="index.html">DASHBOARD</a></li>
 	           		<li><a href="#">WORKOUT</a></li>
-	           		<li><a href="#">CONTACT</a></li>
 	           		<li>Hello:Yaniv<a href="index.html" class="logout">Logout</a></li>
 	           		<li>
 	           			<div class="search-container">
@@ -37,7 +36,7 @@
 	           		</li>
 	           	</ul>
 	        </nav>
-	
+				
 	        <main>
 	        	<section id="breadcrumbs">
                     <ul>
@@ -52,13 +51,81 @@
 	        	<h2><b>Plan Display</b></h2> 
                 <section id="plan">
                     <article>
-                        <img src="images/activityN.png">   
+                        <h4><b>Standard 3-day split</b></h4><br>
+                        <img src="images/calN.png"> 
                     </article>
                     <article>
-                        <img src="images/planN.png">
+                    	<h4><b>Day 1 - Back & biceps</b></h4><br>
+                    	<table class="table table-hover" cellspacing=0>
+							<thead>
+							    <tr>
+							    	<th scope="col">Back</th>
+							        <th scope="col"></th>
+							        <th scope="col">Set 1</th>
+							        <th scope="col">Set 2</th>
+							        <th scope="col">Set 3</th>
+							    </tr>
+							</thead>
+							<tbody>
+							    <tr>
+								    <th scope="row">Dead lift</th>
+								    <td><a href="#"><i class="fa fa-video-camera"></a></td>
+								    <td>10</td>
+								    <td>8</td>
+								    <td>10</td>
+							    </tr>
+							    <tr>
+							       <th scope="row">Bent over rows</th>
+							       <td><a href="#"><i class="fa fa-video-camera"></a></td>
+							       <td>10</td>
+							       <td>8</td>
+							       <td>10</td>
+							    </tr>
+							    <tr>
+							       <th scope="row">Bent over flys</th>
+							       <td><a href="#"><i class="fa fa-video-camera"></a></td>
+							       <td>10</td>
+							       <td>8</td>
+							       <td>10</td>
+							    </tr>
+							  </tbody>
+							</table>           
                     </article>
                     <article>
-                        <img src="images/calN.png">
+                    		<table class="table table-hover" cellspacing=0>
+							<thead>
+							    <tr>
+							    	<th scope="col">Chast</th>
+							        <th scope="col"></th>
+							        <th scope="col">Set 1</th>
+							        <th scope="col">Set 2</th>
+							        <th scope="col">Set 3</th>
+							    </tr>
+							</thead>
+							<tbody>
+							    <tr>
+								    <th scope="row">Dead lift</th>
+								    <td><a href="#"><i class="fa fa-video-camera"></a></td>
+								    <td>8</td>
+								    <td>8</td>
+								    <td>8</td>
+							    </tr>
+							    <tr>
+							       <th scope="row">Bent over rows</th>
+							       <td><a href="#"><i class="fa fa-video-camera"></a></td>
+							       <td>10</td>
+							       <td>10</td>
+							       <td>10</td>
+							    </tr>
+							    <tr>
+							       <th scope="row">Bent over flys</th>
+							       <td><a href="#"><i class="fa fa-video-camera"></a></td>
+							       <td>10</td>
+							       <td>8</td>
+							       <td>10</td>
+							    </tr>
+							  </tbody>
+							</table>  
                     </article>
                     
                 </section>

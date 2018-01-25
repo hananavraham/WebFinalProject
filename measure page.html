@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+	<head>
+		<title>Workout Tracker</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="includes/style.css">
+		<script src="includes/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+		<script src="includes/script.js"></script>
+	</head>
+	
+	<body>
+    
+	    <div id="wrapper">
+	    
+	        <header>
+	        	<a href="index.html"><span class="logo1">Workout Tracker</span></a>
+				<article>
+					IT DOSEN`T GET EASIER YOU JUST GET BETTER
+				</article>  
+	        </header>
+	
+	        <nav id="nav">
+	        	<ul>
+	        		<li><a href="index.html">DASHBOARD</a></li>
+	        		<li><a href="#">WORKOUT</a></li>
+	        		<li><a href="login.html">LOGIN</a></li>
+	        		<li>
+	        			<div class="search-container">
+	        				<input type="text" placeholder="Search.." name="search">
+	        				<button type="submit"><i class="fa fa-search"></i></button>
+	        			</div>
+	        		</li>
+	        	</ul>
+	        </nav>
+	      	<nav id="navmobile">
+	      		<ul>
+	      			<li>
+	      				<button data-toggle="collapse" data-target="#collapse">
+	      					<span class="navbar-toggler-icon"></span>
+	      				</button>
+	      			</li>
+	      		
+	      			<div id="collapse">
+	      				<ul id="collapse-ul">
+	      					<li><a href-"#">Profile</a></li>
+	      					<li><a href-"#">Inbox</a></li>
+	      					<li><a href-"#">My Plan</a></li>
+	      					<li><a href-"#">Workouts</a></li>
+	      					<li><a href-"#">Settings</a></li>
+	      					<li><a href-"#">Log out</a></li>
+	      				</ul>
+	      			</div>
+	        		<li><a href="#">Workouts</a></li>
+	        		<li><a href="index.html">My Plan</a></li>
+	      		</ul>
+	      	</nav>
+	
+	        <main id="measure">
+	        	
+				<article>
+					<!---  steps --->
+					<div class="icon-wrapper"><i class="fa fa-user-md custom-icon"><span class="fix-editor">&nbsp;</span></i></div><br>
+					<label>1,709 steps</label>
+				</article>
+				<article id="indices">
+					<!---  other measures --->
+					<div class="icon-wrapper"><i class="fa fa-fire custom-icon"><span class="fix-editor">&nbsp;</span></i></div>
+
+					<div class="icon-wrapper"><i class="fa fa-refresh custom-icon"><span class="fix-editor">&nbsp;</span></i></div>
+					
+					<div class="icon-wrapper"><i class="fa fa-map-marker custom-icon"><span class="fix-editor">&nbsp;</span></i></div>
+					
+					<div class="icon-wrapper"><i class="fa fa-percent custom-icon"><span class="fix-editor">&nbsp;</span></i></div>
+					
+					<div class="icon-wrapper"><i class="fa fa-text-width custom-icon"><span class="fix-editor">&nbsp;</span></i></div>
+				</article>
+				<article>
+					<label>722.2 cal</label>
+					<label>23 BMI</label>
+					<label>2 km</label>
+					<label>26%</label>
+					<label>75 kg</label>
+				</article>
+				<article id="chartContainer">
+					<!---  Graph --->
+					<script>
+						showIndicesGrpah();
+					</script>
+				</article>
+				
+	        </main>
+	
+	        <footer>
+				<section>
+					<ul>
+						<li><a href="#">Workout Tracker</a></li>
+						<li><a href="#">contact | </a></li> 
+						<li><a href="#">Temp Of use</a></li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</section>
+	        </footer>
+	        
+	    </div>
+	    <script>
+		    $("document").ready(function() {		//invoke function
+					init();
+				});
+		</script>
+	</body>
+ 
+</html>
+              
